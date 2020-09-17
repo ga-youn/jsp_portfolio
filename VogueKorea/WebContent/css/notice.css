@@ -1,0 +1,51 @@
+/*************************************************************
+   공지사항
+*************************************************************/
+main{overflow: hidden;}
+h2{margin-bottom: 60px;}
+/*공지사항 테이블 디자인*/
+.board_zone_list{text-align: center;}
+.board_zone_list table{text-align: center; border-top: 1px solid rgb(78, 78, 78);}
+.board_zone_list table tr{height: 25px;}
+.board_zone_list table tr td:nth-child(2){text-align: left;}
+.board_zone_list table td, table th {font-size: 12px; padding: 10px 5px;}
+.board_zone_list table tr:first-child td {border-top: 1px solid rgb(180, 180, 180);}
+/*공지사항 상세페이지 테이블 디자인*/
+.board_detail_list {text-align:left; border-top: 1px solid rgb(78, 78, 78);border-bottom: 1px solid rgb(78, 78, 78);}
+.board_detail_list th{padding:10px 10px;border-bottom: 1px solid rgba(204, 190, 190, 0.83690);}
+.board_detail_list th span{font-size: 10px;font-weight: lighter;float:right;margin: 0 10px;}
+.board_detail_list td{font-size: 12px; padding:20px 10px;}
+/*공지사항 상세페이지 목록 버튼*/
+.board_detail_sec .list_btn{float: right; margin: 10px 10px 100px; font-size: 12px; border: 1px solid rgba(204, 190, 190, 0.83690);  padding: 5px;}
+/*페이지 네비게이션*/
+#pagination{margin-top: 100px;}
+/*검색박스*/
+.board_search_box{margin: 50px;}
+.btn_board_search i{color: black;}
+
+/* 공지사항 pc*/
+@media only screen and (min-width: 501px) {
+    .content_box{padding: 5% 20%;}
+}
+/* 공지사항 mobile*/
+@media only screen and (max-width: 500px) {
+    .board_zone_tit{text-align: center;}
+    .content_box{padding: 25% 2%;}
+}
+
+
+
+
+/*-----------------------
+관리자모드
+----------------------------*/
+/*버튼*/
+.wrap_button{width:100%;margin-top: 10px;} 
+.wrap_button button{padding:2px;border-radius: 2px;border: 1px solid rgb(228, 228, 228);}
+.del_botton{float:left;margin-right: 5px;}
+.modify_botton{float:left;}
+.writer_botton{float: right; width: 100px; height: 40px; background-color:rgb(228, 228, 228);}
+.wrap_button button:hover{background-color: black;color:white;
+border-color: black;}
+.board_zone_list.notic_back table tr td:nth-child(2){text-align: center;}
+.board_zone_list.notic_back table tr td:nth-child(3){text-align: left;}

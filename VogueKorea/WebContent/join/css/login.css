@@ -1,0 +1,194 @@
+/*************************************************************
+    로그인 프로세스
+*************************************************************/
+/*공통*/
+main{overflow: hidden;}
+section{
+    width: 100%; height: 100%;
+    background: #ffffff;
+    padding: 2%;
+}
+form fieldset{border-color: transparent;box-sizing: border-box;}
+label {font-size: 12px;float: left;}
+label span:hover{border-bottom: 0.5px solid black;color: black;}
+form h2{
+    font-size: 24px; font-weight: normal;
+    color: black;
+    padding-bottom: 30px; text-align: center;
+    vertical-align: middle; 
+}
+/*로그인입력영역*/
+fieldset div#loginField {float: left;}
+div#loginField div.searchInfo{
+    float: right;
+}
+fieldset div#loginField input.input_login{
+    width: 320px; height: 56px;
+    font-size: 14px; color: #333;
+    border: 0.5px solid silver;
+    outline: none;
+    display: block;
+    line-height: 16px;
+    box-sizing: border-box;
+    min-height: 16px;
+    padding: 10px 20px;
+}
+fieldset div#loginField div.input_bottom{
+    margin-top: 10px;
+}
+div#loginField input.input_login:nth-of-type(1) {border-radius: 5px 5px 0 0;}
+div#loginField input.input_login:nth-of-type(2) {border-radius: 0 0 5px 5px;border-top: none;}
+/*아이디,비밀번호찾기 버튼 영역*/
+fieldset div.searchInfo{float: right;font-size: 12px;}
+div.searchInfo a:hover{border-bottom: 0.5px solid black;}
+
+/*************************************************************
+    로그인 페이지
+*************************************************************/
+/*로그인 pc*/
+@media only screen and (min-width: 501px) {
+    section form#login_form{width: 500px; height: 300px; margin: 50px auto;}
+    /*버튼*/
+    main button {
+        border: none;
+        background-color: transparent;
+        outline: none; 
+        min-width: 120px; height: 40px;
+        padding: 0 23px; margin: 0 4px; box-sizing: border-box;
+        vertical-align: middle; text-align: center;
+        border-radius: 5px; border: 1px solid;
+        font-size: 13px; line-height: 38px;
+        border-color: #000; color: #fff; background-color: #000;  
+    }
+    button.btnLogin{
+        font: 16px; font-weight: bold;
+        border-radius: 5px;
+        display: inline-block;
+        border-color: #dddddd; color: #fff; 
+        background-color: #d3d1d1e1;
+        width: 56px; height: 112px;
+        cursor: pointer;
+    }
+    button.btnLogin:hover{
+        background-color: #000000e1;
+    }
+}
+/*로그인 모바일*/
+@media only screen and (max-width: 500px) {
+    section{padding:25% 2%; max-width: 500px;width: 100%; height: 100%;}
+    fieldset div#loginField{width: 100%;height: 100%; margin: 20% 0;}
+
+    .btnLogin{display: block;}
+    fieldset div#loginField input.input_login{
+        width: 100%; 
+    }
+    /*버튼*/
+    main button {
+        border: none;
+        background-color: transparent;
+        outline: none; 
+        min-width: 100%; height: 50px;
+        padding: 0 5px; margin-top: 5px; box-sizing: border-box;
+        vertical-align: middle; text-align: center;
+        border-radius: 5px; border: 1px solid;
+        font: 16px; line-height: 20px;font-weight: bold;
+        border-color: transparent; color: #fff; background-color: #d3d1d1e1;
+    }
+    button.btnLogin:active{
+        background-color: #000000e1;
+    }
+}
+
+
+/*************************************************************
+    아이디 찾기 & 비밀번호찾기 페이지
+*************************************************************/
+
+/*확인 버튼 영역*/
+fieldset div.wrapBtn{margin: 40px auto;vertical-align: middle; text-align: center;}
+button.btnType2{background-color: black; color: white;}
+
+
+
+/*아이디찾기 입력박스*/
+div#loginFrom_num{display:none;}
+div#loginFrom_mail{display:none;}
+
+input#search_icon1:checked ~ div#loginFrom_num{display:block;}
+
+input#search_icon2:checked ~ div#loginFrom_mail{display:block;}
+
+/*아이디찾기-체크박스 클릭시 색상변경*/
+input.checkbox_icon:nth-of-type(1):checked ~ label:nth-of-type(1) i {color: red;}
+input.checkbox_icon:nth-of-type(2):checked ~ label:nth-of-type(2) i {color: red;}
+input.checkbox_icon:nth-of-type(1):checked ~ label:nth-of-type(1) span {color: black;}
+input.checkbox_icon:nth-of-type(2):checked ~ label:nth-of-type(2) span {color: black;}
+/*아이디&비밀번호 찾기 pc*/
+@media only screen and (min-width: 501px) {
+        
+    /*아이디, 비밀번호 찾기 입력 영역*/
+    input.inpSearch{
+        width: 712px; height: 56px;
+        font-size: 12px; color: #333;
+        border: 0.5px solid silver;
+        outline: none;
+        line-height: 16px;
+        box-sizing: border-box;
+        min-height: 16px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 40px;
+    }
+    /*아이디, 비밀번호 찾기 페이지 */
+    section#search_section {background-color: white; padding: 5% 0 10%;}
+    section#search_section form#search_form {width: 712px; margin: 0 auto;}
+    form h2.search_h2{text-align: left;}
+    fieldset h3{
+        text-align: left;
+        font-size: 16px; font-weight: normal; color: black;
+        padding: 30px 0 10px;
+        float: left;
+    }
+    
+    fieldset #checkbox_search{
+        float: right; 
+        padding: 30px 10px 0 10px;
+        color: silver
+    }
+}
+/*아이디&비밀번호 찾기 모바일*/
+@media only screen and (max-width: 500px) {
+    section#search_section{padding:25% 2%; max-width: 500px;width: 100%; height: auto; text-align: center;}
+    form h2.search_h2{text-align: none;text-align: center;}
+
+    /*아이디, 비밀번호 찾기 입력 영역*/
+    input.inpSearch{
+        width: 100%; height: 56px;
+        font-size: 12px; color: #333;
+        border: 0.5px solid silver;
+        outline: none;
+        line-height: 16px;
+        box-sizing: border-box;
+        min-height: 16px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 40px;
+    }
+    fieldset h3{
+        text-align: center;
+        font-size: 16px; font-weight: normal; color: black;
+        padding: 30px 0 10px;
+        float: none;
+    }
+      
+    fieldset #checkbox_search{
+        float: none; 
+        padding: 30px 10px 0 10px;
+        color: silver
+    }
+    .searchBottom span, .searchBottom a{font-size: 12px;}
+   
+}
+
+
+

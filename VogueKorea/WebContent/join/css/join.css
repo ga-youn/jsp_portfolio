@@ -1,0 +1,185 @@
+/*************************************************************
+    회원가입::공통
+*************************************************************/
+main{overflow: hidden;}
+.content_box{padding:5% 0; width: 712px;height: auto;
+    margin: 0 auto ;
+    position: relative;}
+section fieldset{
+    padding: 0 auto;
+    border: none;
+    width: 100%;
+    position: relative;
+    box-sizing: border;
+}
+hr{margin: 0 auto 50px; width: 95%;}
+/*상단타이틀*/
+.join_tit{overflow: hidden;width: 100%;height: auto;border-bottom:1px solid #dbdbdb;box-sizing: border;}
+.join_tit h2{float:left; font-size:20px; color:#222222;}
+.join_tit ol{float:right; line-height: 62px;}
+.join_tit ol li{float:left; font-size:12px; color:#d1d1d1;padding-left: 10px;}
+.join_tit .page_on{color:black; font-weight:bold;}
+.join_tit li span{font-size:13px; font-weight:bold;}
+
+/*버튼 영역*/
+.btn_box{text-align: center; margin-bottom: 15%;}
+.btn_box button{
+    width:150px; height:45px; 
+}
+/*이전버튼*/
+.btn_Prev{color:#3e3d3c; font-weight:bold; font-size:13px; border:1px solid #cccccc; background:#fff; 
+}
+.btn_Prev:hover{color:#333333; border:1px solid #bbbbbb;}
+/*다음 버튼*/
+.btn_Next{  color:#ffffff; font-size:13px; border:1px solid #666666; background:#666666; font-weight:bold;margin-left:6px; }
+.btn_Next:hover{border:1px solid #626262; color: #fff; background:black;}
+/*************************************************************
+    회원가입::약관동의
+*************************************************************/
+
+
+
+
+/*텍스트에 마우스 이동시 밑줄*/
+#wrapContent  label  span:hover{
+    border-bottom: 1px solid black;
+}
+#wrapContent label span.agreetext_2:hover{
+    border-bottom: 1px solid silver;
+}
+/*체크박스 아이콘 색바꾸기*/
+section fieldset input:checked ~ label > i {color: red;}
+
+
+/*약관동의 pc*/
+@media only screen and (min-width: 501px) {
+  
+    /*allAgree전체동의체크영역*/
+    #wrapContent .titleBox{width:672px; height: 50px; margin:0 20px;}
+
+    #wrapContent .allAgree_titleBox {margin-top: 60px;}
+
+    #wrapContent  label  span{
+        font-size: 16px;
+        line-height: 19px;
+        display: inline-block;
+        color: black
+    }
+    /*(전체동의)텍스트만 스타일변경*/
+    #wrapContent label span.agreetext_2{ font-size: 15px; color: silver;}
+    /*약관동의1영역*/
+
+    #wrapContent .agreeContent{
+        width: 672px; height: 140px; margin: 0 20px 60px;
+        border: 1px solid silver;
+        overflow: hidden scroll;
+        font-size: 13px; color: #555;
+        background-color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: justify;
+        line-height: 22px ;   
+    }
+        
+
+
+}
+/*약관동의 모바일*/
+@media only screen and (max-width: 500px) {
+    .content_box{padding:25% 2%; width: 100%;height: auto;
+        margin: 0 auto;
+        position: relative;}
+  
+    /*상단 타이틀*/
+    .join_tit{border-bottom:1px solid #dbdbdb;text-align: center;width: 100%;height: 70px;}
+    .join_tit h2{float:none; font-size:20px; color:#222222;}
+    .join_tit ol{float: none; margin:25px auto 5px;text-align: center; display: inline-block;}
+    
+    hr{margin: 0 auto 50px; width: 90%;}
+    /*allAgree전체동의체크영역*/
+    #wrapContent .titleBox{width: 100%; height: 50px; margin:0 5px;}
+
+    #wrapContent .allAgree_titleBox {margin-top: 60px;}
+
+    #wrapContent  label  span{
+        font-size: 11px;
+        line-height: 12px;
+        display: inline-block;
+        color: black;
+        
+    }
+    /*(전체동의)텍스트만 스타일변경*/
+    #wrapContent label span.agreetext_2{ margin-left: 12px; font-size: 10px; color: silver;}
+    /*약관동의1영역*/
+
+    #wrapContent .agreeContent{
+        width: 100%; height: 140px; margin: 0 0 60px;
+        border: 1px solid silver;
+        overflow: hidden scroll;
+        font-size: 10px; color: #555;
+        background-color: white;
+        padding: 5px;
+        box-sizing: border-box;
+        text-align: justify;
+        line-height: 22px ;   
+    }
+
+    /*버튼 영역*/
+    .btn_box{text-align: center; margin-bottom: 15%;}
+    .btn_box button{
+        width:150px; height:45px; 
+    }
+    /*이전버튼*/
+    .btn_Prev{
+        color:#3e3d3c; font-weight:bold; font-size:13px; border:1px solid #cccccc; background:#fff; 
+    }
+    .btn_member_cancel:hover{color:#333333; border:1px solid #bbbbbb;}
+    /* 다음버튼*/
+    .btn_Next{
+        color:#ffffff; font-size:14px; border:1px solid #666666; background:#666666; font-weight:bold;margin-left:6px;
+    }
+}
+/*************************************************************
+    회원가입::정보입력
+*************************************************************/
+/*소제목*/
+.member_cont h3{
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+}
+/* 반드시 입력표시 */
+/*th > .important{margin: 0 0 0 -10px; padding:0 0 0 10px; background:url('${pageContext.request.contextPath}/images/icon_dot_03.png') no-repeat 0 center;}
+span.important_txt{float: right; font-size: 10px;}*/
+/* 정보입력란 */
+.base_info_box{margin: 50px 0;}
+table{width:100%; border:0; border-spacing:0; border-collapse:collapse; text-align:center;}
+.table_left{text-align:left;border-top:1px solid #999999;}
+th{padding:9px 10px 10px 10px; border-top:1px solid #999999; border-bottom:1px solid #dbdbdb; background:#f7f7f7;}
+.table_left th{padding:15px 10px 14px 20px; border-top:none 0; background:#f7f7f7; text-align:left;}
+td{height:31px; padding:15px 10px 14px 10px; color:#777777; border-bottom:1px solid #dbdbdb; background:#ffffff;}
+.table_left td{height:31px; padding:12px 10px 11px 15px; text-align:left;}
+table input{width: 60%;}
+.address_postcode{width: 60%;}
+.address_postcode > input{width: 50%; float:left;}
+#idCheck{width: 20%;}
+/*배송지관리버튼*/
+.btn_post_search{background-color: rgb(202, 202, 202); margin-left: 20px;}
+/*js alert*/
+.alert{font-size: 10px; color:red;}
+.alert-success{color:blue;}
+
+
+/* 회원가입::정보입력 모바일*/
+@media only screen and (max-width: 500px) {
+    /*상단 타이틀*/
+    .join_tit{border-bottom:1px solid #dbdbdb;text-align: center;width: 100%;height: 70px;}
+    .join_tit h2{float:none; font-size:20px; color:#222222;}
+    .join_tit ol{float: none; margin:25px auto 5px;text-align: center; display: inline-block;}
+    /*정보입력란*/
+    table input{width: 100%;}
+    .address_postcode{width: 100%;}
+    .address_postcode > input{width: 50%; float:left;}
+}
+
+
