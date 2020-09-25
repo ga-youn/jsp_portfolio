@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../header.jsp"%> <!-- header삽입 -->
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/join/css/join.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/join.css">
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/join.js"></script>
     <script type="text/javascript">
         /*우편번호찾기 API*/

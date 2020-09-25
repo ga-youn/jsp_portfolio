@@ -17,11 +17,13 @@ function change_info(){
 
  	if((pwd1.value) == ""){//비밀번호 입력 하지 않았을 경우
         alert("비밀번호를 입력해 주세요");
-        pwd1.focus();       
+        pwd1.focus();   
+		return false;    
     }
-    else if((pwd2.value=="")){//비밀번호 확인
+    if((pwd2.value=="")){//비밀번호 확인
         alert("비밀번호를 확인해 주세요");
-        pwd2.focus();    
+        pwd2.focus(); 
+		return false;     
     } 
     else if((pwd1.value)!=(pwd2.value)){//비밀번호와 비밀번호 확인이 일치 하지 않을 경우
         alert("비밀번호가 일치 하지 않습니다.");

@@ -149,8 +149,8 @@ section fieldset input:checked ~ label > i {color: red;}
     float: left;
 }
 /* 반드시 입력표시 */
-th > .important{margin: 0 0 0 -10px; padding:0 0 0 10px; background:url('../WebContent/images/icon_dot_03.png') no-repeat 0 center;}
-span.important_txt{float: right; font-size: 10px;}
+/*th > .important{margin: 0 0 0 -10px; padding:0 0 0 10px; background:url('${pageContext.request.contextPath}/images/icon_dot_03.png') no-repeat 0 center;}
+span.important_txt{float: right; font-size: 10px;}*/
 /* 정보입력란 */
 .base_info_box{margin: 50px 0;}
 table{width:100%; border:0; border-spacing:0; border-collapse:collapse; text-align:center;}
@@ -162,7 +162,7 @@ td{height:31px; padding:15px 10px 14px 10px; color:#777777; border-bottom:1px so
 table input{width: 60%;}
 .address_postcode{width: 60%;}
 .address_postcode > input{width: 50%; float:left;}
-
+#idCheck{width: 20%;}
 /*배송지관리버튼*/
 .btn_post_search{background-color: rgb(202, 202, 202); margin-left: 20px;}
 /*js alert*/

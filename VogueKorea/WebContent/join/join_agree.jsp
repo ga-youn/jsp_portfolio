@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/images/x-icon.JPG"><!--파비콘-->
     <title>보그 코리아|약관 동의</title>
     <script src="https://kit.fontawesome.com/cccee664d4.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/join/css/join.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/join.css">
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/join.js"></script> 
 <%@ include file="../header.jsp"%><!-- header삽입 -->
 

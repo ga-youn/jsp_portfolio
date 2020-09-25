@@ -59,7 +59,7 @@
                                         </div>
                                         -->
                                         <div class="choice_num_view device_mobile" id="PJ_sort_border">
-                                            <select class="chosen-select" id="PJ_sort">
+                                            <select class="chosen-select" id="PJ_sort" >
                                                 <option value="sort1" selected="selected">추천순</option>
                                                 <option value="sort2" >판매인기순</option>
                                                 <option value="sort3" onclick="sortLI()">낮은가격순</option>
